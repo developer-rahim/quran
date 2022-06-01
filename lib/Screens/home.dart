@@ -2,7 +2,7 @@ import 'package:api_test/model/sura_list_model.dart';
 import 'package:api_test/service/sura_service.dart';
 import 'package:flutter/material.dart';
 
-import '../detailsScreen.dart';
+import 'detailsScreen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -23,7 +23,10 @@ class _HomeState extends State<Home> {
   }
 
   fetchSuraList() async {
-    suraList = await SuraService().getSuraList();
+    var data=await SuraService().getSuraList();
+    setState(() {
+      suraList=data;
+    });
     initialSura = false;
   }
 
@@ -50,8 +53,12 @@ class _HomeState extends State<Home> {
           padding: EdgeInsets.symmetric(
             horizontal: 8.0,
           ),
-          child: ListView.builder(
+          child:suraList.length>0?
+          
+           ListView.builder(
               itemCount: suraList.length,
+              shrinkWrap: true,
+             // physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 var getsuralist = suraList[index];
                 return GestureDetector(
@@ -81,13 +88,13 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       title: Text(
-                        getsuralist.name!.toString(),
+                        getsuralist.name!,
                         style: TextStyle(fontSize: 18),
                       ),
                     ),
                   ),
                 );
-              }),
+              }):Center(child: CircularProgressIndicator(),),
         ),
       ),
     );
