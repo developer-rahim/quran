@@ -8,11 +8,16 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import 'Screens/home.dart';
-
+double fontsize=15;
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Home()));
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          textTheme: TextTheme(
+              caption: TextStyle(fontSize: fontsize),
+              bodyText1: TextStyle(fontSize: fontsize),
+              bodyText2: TextStyle(fontSize: fontsize))),
+      home: Home()));
 }
 // import 'package:flutter/material.dart';
 // import 'dart:convert';
