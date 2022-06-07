@@ -170,7 +170,7 @@ class _HomePageState extends State<HomePage> {
                           shrinkWrap: true,
                           // physics: NeverScrollableScrollPhysics(),
                           itemBuilder: (_, index) {
-                            if (controller.text.isEmpty) {
+                            if (controller.text.isEmpty || isSearch==false) {
                               return Card(
                                 margin: EdgeInsets.symmetric(
                                     vertical: 8, horizontal: 10),
