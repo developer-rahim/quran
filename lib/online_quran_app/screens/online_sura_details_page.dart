@@ -3,22 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-class HomePage extends StatefulWidget {
- final int? id;
-  var name;
+class OnlineSuraDetailsPage extends StatefulWidget {
+  final int? id;
+  final String? name;
 
-  HomePage({required this.id, required this.name});
+  OnlineSuraDetailsPage({required this.id, required this.name});
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _OnlineSuraDetailsPageState createState() => _OnlineSuraDetailsPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _OnlineSuraDetailsPageState extends State<OnlineSuraDetailsPage> {
   // At the beginning, we fetch the first 20 posts
   int _page = 1;
-  int _limit = 20;
-  double _value = 0.0;
-  bool _slider = false;
 
   // There is next page or not
   bool _hasNextPage = true;
@@ -169,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                           shrinkWrap: true,
                           // physics: NeverScrollableScrollPhysics(),
                           itemBuilder: (_, index) {
-                            if (controller.text.isEmpty || isSearch==false) {
+                            if (controller.text.isEmpty || isSearch == false) {
                               return Card(
                                 margin: EdgeInsets.symmetric(
                                     vertical: 8, horizontal: 10),
@@ -191,14 +188,19 @@ class _HomePageState extends State<HomePage> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Container(width: double.infinity,
-                                            child: Column(crossAxisAlignment: CrossAxisAlignment.end,
+                                          Container(
+                                            width: double.infinity,
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
                                               children: [
-                                                Directionality( textDirection: TextDirection.rtl,
+                                                Directionality(
+                                                  textDirection:
+                                                      TextDirection.rtl,
                                                   child: Text(
                                                     _posts[index]["ayah_text"],
-                                                    style:
-                                                        TextStyle(fontSize: fontsize),
+                                                    style: TextStyle(
+                                                        fontSize: fontsize),
                                                   ),
                                                 ),
                                               ],
@@ -283,7 +285,8 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(10)),
                           width: 160,
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,////
+                            mainAxisAlignment:
+                                MainAxisAlignment.spaceEvenly, ////
                             children: [
                               IconButton(
                                   onPressed: () {

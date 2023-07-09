@@ -1,14 +1,14 @@
 import 'dart:convert';
 
 import 'package:api_test/main.dart';
-import 'package:api_test/quran_app/database/db_model.dart';
-import 'package:api_test/quran_app/database/dbhelper.dart';
+import 'package:api_test/local_json_quran_app/database/db_model.dart';
+import 'package:api_test/local_json_quran_app/database/dbhelper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class SuraDetails extends StatefulWidget {
-  String? suraname;
-  int? suraNo;
+  final String? suraname;
+  final int? suraNo;
 
   SuraDetails({
     this.suraname,
@@ -373,7 +373,7 @@ class _SuraDetailsState extends State<SuraDetails> {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      await DBHelper().saveToAddressList(AddAddressModel(
+                      await DBHelper().saveToAddressList(SuraDetailsModel(
                           sura: uniqId,
                           sura_name: suraNama.toString(),
                           VerseIDAr: verseIDar,

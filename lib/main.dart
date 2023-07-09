@@ -1,4 +1,4 @@
-import 'package:api_test/quran_app/screen/sura_name.dart';
+import 'package:api_test/online_quran_app/screens/online_sura_page.dart';
 import 'package:flutter/material.dart';
 
 double fontsize = 16;
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       // Hide the debug banner
       debugShowCheckedModeBanner: false,
       title: 'Quran App',
-      home: HomePage(),
+      home: OnlineSuraPage(),
     );
   }
 }
