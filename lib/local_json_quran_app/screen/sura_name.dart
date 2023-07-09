@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:api_test/quran_app/screen/bookmark.dart';
-import 'package:api_test/quran_app/screen/sura_details.dart';
+import 'package:api_test/local_json_quran_app/screen/bookmark.dart';
+import 'package:api_test/local_json_quran_app/screen/sura_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
+    super.initState();
     // TODO: implement initState
     suraName(controller.text);
   }

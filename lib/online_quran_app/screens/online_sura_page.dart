@@ -1,17 +1,16 @@
-import 'package:api_test/model/sura_list_model.dart';
-import 'package:api_test/service/sura_service.dart';
-import 'package:api_test/sura_page.dart';
+import 'package:api_test/online_quran_app/repository/sura_repository.dart';
+import 'package:api_test/online_quran_app/model/sura_list_model.dart';
+import 'package:api_test/online_quran_app/screens/online_sura_details_page.dart';
 import 'package:flutter/material.dart';
 
-
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class OnlineSuraPage extends StatefulWidget {
+  const OnlineSuraPage({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<OnlineSuraPage> createState() => _OnlineSuraPageState();
 }
 
-class _HomeState extends State<Home> {
+class _OnlineSuraPageState extends State<OnlineSuraPage> {
   List<SuraListModel> suraList = [];
   bool initialSura = true;
 
@@ -23,7 +22,7 @@ class _HomeState extends State<Home> {
   }
 
   fetchSuraList() async {
-    var data = await SuraService().getSuraList();
+    var data = await SuraRepository().getSuraList();
     setState(() {
       suraList = data;
     });
@@ -86,7 +85,7 @@ class _HomeState extends State<Home> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage(
+                                builder: (context) => OnlineSuraDetailsPage(
                                       name: suraList[index].name,
                                       id: int.parse(suraList[index].id!),
                                     )));
