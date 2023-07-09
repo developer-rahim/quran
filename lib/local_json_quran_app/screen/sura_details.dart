@@ -1,33 +1,27 @@
 import 'dart:convert';
-
 import 'package:api_test/main.dart';
 import 'package:api_test/local_json_quran_app/database/db_model.dart';
 import 'package:api_test/local_json_quran_app/database/dbhelper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class SuraDetails extends StatefulWidget {
+class LocalSuraDetails extends StatefulWidget {
   final String? suraname;
   final int? suraNo;
 
-  SuraDetails({
+  LocalSuraDetails({
     this.suraname,
     this.suraNo,
   });
 
   @override
-  State<SuraDetails> createState() => _SuraDetailsState();
+  State<LocalSuraDetails> createState() => _LocalSuraDetailsState();
 }
 
-class _SuraDetailsState extends State<SuraDetails> {
+class _LocalSuraDetailsState extends State<LocalSuraDetails> {
   List suraArList = [];
   List suraBnList = [];
   Future<void> suraAr(VerseIDAr) async {
-    // final String response = await rootBundle.loadString('assets/ayats_ar.json');
-    // final data = await json.decode(response);
-    // setState(() {
-    //   // _items = data;
-    // });
     final String response = await rootBundle.loadString('assets/ayats_ar.json');
     final data = await json.decode(response);
     //print(data);
@@ -38,11 +32,6 @@ class _SuraDetailsState extends State<SuraDetails> {
   }
 
   Future<void> suraBn() async {
-    // final String response = await rootBundle.loadString('assets/ayats_ar.json');
-    // final data = await json.decode(response);
-    // setState(() {
-    //   // _items = data;
-    // });
     final String response = await rootBundle.loadString('assets/ayats_bn.json');
     final data = await json.decode(response);
     print(data);

@@ -5,14 +5,14 @@ import 'package:api_test/local_json_quran_app/screen/sura_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class LocalSuraPage extends StatefulWidget {
+  const LocalSuraPage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _LocalSuraPageState createState() => _LocalSuraPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _LocalSuraPageState extends State<LocalSuraPage> {
   // List _itemss = [];
   List _SuraName = [];
 
@@ -130,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SuraDetails(
+                                  builder: (context) => LocalSuraDetails(
                                         suraname: _SuraName[index]["sura_name"],
                                         suraNo: int.parse(
                                             _SuraName[index]["sura_no"]),
@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SuraDetails(
+                                  builder: (context) => LocalSuraDetails(
                                         suraname: _SuraName[index]["sura_name"],
                                         suraNo: int.parse(
                                             _SuraName[index]["sura_no"]),
