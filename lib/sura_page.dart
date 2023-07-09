@@ -1,11 +1,10 @@
-import 'package:api_test/floating_action/button_action.dart';
 import 'package:api_test/main.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
-  int? id;
+ final int? id;
   var name;
 
   HomePage({required this.id, required this.name});
@@ -284,7 +283,7 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(10)),
                           width: 160,
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,////
                             children: [
                               IconButton(
                                   onPressed: () {

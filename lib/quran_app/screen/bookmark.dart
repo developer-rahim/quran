@@ -1,6 +1,5 @@
 import 'package:api_test/quran_app/database/db_model.dart';
 import 'package:api_test/quran_app/database/dbhelper.dart';
-import 'package:api_test/quran_app/screen/sura_details.dart';
 
 import 'package:flutter/material.dart';
 

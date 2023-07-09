@@ -3,7 +3,6 @@ import 'package:api_test/service/sura_service.dart';
 import 'package:api_test/sura_page.dart';
 import 'package:flutter/material.dart';
 
-import 'detailsScreen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
