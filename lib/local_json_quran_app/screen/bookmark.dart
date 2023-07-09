@@ -1,5 +1,5 @@
-import 'package:api_test/quran_app/database/db_model.dart';
-import 'package:api_test/quran_app/database/dbhelper.dart';
+import 'package:api_test/local_json_quran_app/database/db_model.dart';
+import 'package:api_test/local_json_quran_app/database/dbhelper.dart';
 
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class ShowData extends StatefulWidget {
 }
 
 class _ShowDataState extends State<ShowData> {
-  List<AddAddressModel> addresses = [];
+  List<SuraDetailsModel> addresses = [];
   @override
   void initState() {
     // TODO: implement initState
@@ -27,10 +27,9 @@ class _ShowDataState extends State<ShowData> {
     print(addresses);
     return ad;
   }
-deletedata()async{
 
-}
-var delete;
+  deletedata() async {}
+  var delete;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
