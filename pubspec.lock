@@ -25,6 +25,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.0"
+<<<<<<< Updated upstream
+=======
+  charcode:
+    dependency: transitive
+    description:
+      name: charcode
+      sha256: fb98c0f6d12c920a02ee2d998da788bca066ca5f148492b7085ee23372b12306
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.1"
+>>>>>>> Stashed changes
   clock:
     dependency: transitive
     description:
@@ -41,6 +52,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.1"
+<<<<<<< Updated upstream
   csslib:
     dependency: transitive
     description:
@@ -49,11 +61,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+=======
+>>>>>>> Stashed changes
   cupertino_icons:
     dependency: "direct main"
     description:
       name: cupertino_icons
+<<<<<<< Updated upstream
       sha256: e35129dc44c9118cee2a5603506d823bab99c68393879edb440e0090d07586be
+=======
+      sha256: "1989d917fbe8e6b39806207df5a3fdd3d816cbd090fac2ce26fb45e9a71476e5"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
@@ -74,7 +92,11 @@ packages:
     dependency: "direct dev"
     description:
       name: flutter_lints
+<<<<<<< Updated upstream
       sha256: "2118df84ef0c3ca93f96123a616ae8540879991b8b57af2f81b76a7ada49b2a4"
+=======
+      sha256: b543301ad291598523947dc534aaddc5aaad597b709d2426d3a0e0d44c5cb493
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
@@ -82,7 +104,11 @@ packages:
     dependency: transitive
     description:
       name: flutter_plugin_android_lifecycle
+<<<<<<< Updated upstream
       sha256: "950e77c2bbe1692bc0874fc7fb491b96a4dc340457f4ea1641443d0a6c1ea360"
+=======
+      sha256: "6ffe524cd6a7d49d99b2bf979a4f6ad82304c639cea4c8d3d0f8cf1aff24e74a"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.0.15"
@@ -108,7 +134,11 @@ packages:
     dependency: "direct main"
     description:
       name: google_maps_flutter
+<<<<<<< Updated upstream
       sha256: "7e35644d8a88ad86409976db8fa23ddc7d933f8239e57405e4660534be09acd2"
+=======
+      sha256: "028f46a796f331391fd6f06411646dd3b64ad36a1c1c6877861181275274c3be"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
@@ -132,7 +162,11 @@ packages:
     dependency: transitive
     description:
       name: google_maps_flutter_platform_interface
+<<<<<<< Updated upstream
       sha256: "308f0af138fa78e8224d598d46ca182673874d0ef4d754b7157c073b5b4b8e0d"
+=======
+      sha256: "9e60b98f87afd64050cad573cc3a7e449adcf41521464b7daf4e4e02dd8ab1ad"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.2.7"
@@ -156,7 +190,11 @@ packages:
     dependency: "direct main"
     description:
       name: http
+<<<<<<< Updated upstream
       sha256: "759d1a329847dd0f39226c688d3e06a6b8679668e350e2891a6474f8b4bb8525"
+=======
+      sha256: "2ed163531e071c2c6b7c659635112f24cb64ecbebf6af46b550d536c0b1aa112"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
@@ -164,10 +202,17 @@ packages:
     dependency: transitive
     description:
       name: http_parser
+<<<<<<< Updated upstream
       sha256: "2aa08ce0341cc9b354a498388e30986515406668dbcc4f7c950c3e715496693b"
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+=======
+      sha256: e362d639ba3bc07d5a71faebb98cde68c05bfbcfbbb444b60b6f60bb67719185
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.0"
+>>>>>>> Stashed changes
   js:
     dependency: transitive
     description:
@@ -176,6 +221,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+<<<<<<< Updated upstream
   js_wrapping:
     dependency: transitive
     description:
@@ -184,11 +230,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.4"
+=======
+>>>>>>> Stashed changes
   lints:
     dependency: transitive
     description:
       name: lints
+<<<<<<< Updated upstream
       sha256: "0a217c6c989d21039f1498c3ed9f3ed71b354e69873f13a8dfc3c9fe76f1b452"
+=======
+      sha256: a2c3d198cb5ea2e179926622d433331d8b58374ab8f29cdda6e863bd62fd369c
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
@@ -228,7 +280,11 @@ packages:
     dependency: transitive
     description:
       name: plugin_platform_interface
+<<<<<<< Updated upstream
       sha256: "6a2128648c854906c53fa8e33986fc0247a1116122f9534dd20e3ab9e16a32bc"
+=======
+      sha256: "075f927ebbab4262ace8d0b283929ac5410c0ac4e7fc123c76429564facfb757"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
@@ -238,6 +294,7 @@ packages:
       name: pull_to_refresh
       sha256: bbadd5a931837b57739cf08736bea63167e284e71fb23b218c8c9a6e042aad12
       url: "https://pub.dev"
+<<<<<<< Updated upstream
     source: hosted
     version: "2.0.0"
   sanitize_html:
@@ -246,6 +303,8 @@ packages:
       name: sanitize_html
       sha256: "0a445f19bbaa196f5a4f93461aa066b94e6e025622eb1e9bc77872a5e25233a5"
       url: "https://pub.dev"
+=======
+>>>>>>> Stashed changes
     source: hosted
     version: "2.0.0"
   sky_engine:
@@ -265,7 +324,11 @@ packages:
     dependency: "direct main"
     description:
       name: sqflite
+<<<<<<< Updated upstream
       sha256: b4d6710e1200e96845747e37338ea8a819a12b51689a3bcf31eff0003b37a0b9
+=======
+      sha256: f83e4c46d693b02436348a3a8693fa0fa50b0d98eeb55afc7579b70b0d8967f6
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.2.8+4"
@@ -273,7 +336,11 @@ packages:
     dependency: transitive
     description:
       name: sqflite_common
+<<<<<<< Updated upstream
       sha256: "8f7603f3f8f126740bc55c4ca2d1027aab4b74a1267a3e31ce51fe40e3b65b8f"
+=======
+      sha256: "75e99c238f22152669c39e02a3cdcf78515d11856a8a78e0136452943404d9bd"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.4.5+1"
@@ -297,7 +364,11 @@ packages:
     dependency: transitive
     description:
       name: stream_transform
+<<<<<<< Updated upstream
       sha256: "14a00e794c7c11aa145a170587321aedce29769c08d7f58b1d141da75e3b1c6f"
+=======
+      sha256: ed464977cb26a1f41537e177e190c67223dbd9f4f683489b6ab2e5d211ec564e
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
@@ -313,7 +384,11 @@ packages:
     dependency: transitive
     description:
       name: synchronized
+<<<<<<< Updated upstream
       sha256: "5fcbd27688af6082f5abd611af56ee575342c30e87541d0245f7ff99faa02c60"
+=======
+      sha256: a7f0790927c0806ae0d5eb061c713748fa6070ef0037e391a2d53c3844c09dc2
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "3.1.0"
@@ -337,7 +412,11 @@ packages:
     dependency: transitive
     description:
       name: typed_data
+<<<<<<< Updated upstream
       sha256: facc8d6582f16042dd49f2463ff1bd6e2c9ef9f3d5da3d9b087e244a7b564b3c
+=======
+      sha256: "53bdf7e979cfbf3e28987552fd72f637e63f3c8724c9e56d9246942dc2fa36ee"
+>>>>>>> Stashed changes
       url: "https://pub.dev"
     source: hosted
     version: "1.3.2"
@@ -350,5 +429,10 @@ packages:
     source: hosted
     version: "2.1.4"
 sdks:
+<<<<<<< Updated upstream
   dart: ">=3.0.3 <4.0.0"
   flutter: ">=3.10.3"
+=======
+  dart: ">=3.0.0-0 <4.0.0"
+  flutter: ">=2.5.0"
+>>>>>>> Stashed changes
