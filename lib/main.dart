@@ -1,8 +1,5 @@
 import 'package:api_test/quran_app/screen/sura_name.dart';
 import 'package:flutter/material.dart';
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
 
 double fontsize = 16;
 void main() {

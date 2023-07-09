@@ -6,8 +6,6 @@ import 'package:api_test/quran_app/database/dbhelper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'bookmark.dart';
-
 class SuraDetails extends StatefulWidget {
   String? suraname;
   int? suraNo;
@@ -131,7 +129,7 @@ class _SuraDetailsState extends State<SuraDetails> {
                                 verseIDar = suraArList[index]["VerseIDAr"];
                                 suraNo = suraArList[index]["sura"];
                                 suraNama = widget.suraname!;
-                                 uniqId=suraArList[index]['id'];
+                                uniqId = suraArList[index]['id'];
                                 print(textar);
                                 print(textbn);
                                 print(uniqId);
@@ -432,7 +430,7 @@ class _SuraDetailsState extends State<SuraDetails> {
               Card(
                 shadowColor: Colors.black,
                 elevation: 20,
-                child: new FlatButton(
+                child: new ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
